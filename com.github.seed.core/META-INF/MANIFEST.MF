@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: SEED - Core
+Bundle-SymbolicName: com.github.seed.core;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: Jin Mingjian
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Import-Package: com.github.seed.core.scalamodel,
+ lpg.runtime,
+ org.osgi.framework
+Export-Package: com.github.seed.core.services,
+ com.github.seed.core.services.impl
+Service-Component: OSGI-INF/lexing.xml
+Require-Bundle: javax.inject;bundle-version="1.0.0",
+ org.eclipse.e4.core.di;bundle-version="1.0.0",
+ org.eclipse.e4.core.contexts;bundle-version="1.0.0"

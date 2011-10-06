@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="com.github.seed.ui.editor.ScalaEditor"
+            default="true"
+            extensions="scala"
+            icon="icons/obj16/scu_obj.png"
+            id="com.github.seed.ui.editor.ScalaEditor"
+            name="Scala Editor">
+      </editor>
+   </extension>
+
+
+</plugin>

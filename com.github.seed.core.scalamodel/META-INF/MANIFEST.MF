@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: SEED Scala Model
+Bundle-SymbolicName: com.github.seed.core.scalamodel;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: Jin Mingjian
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Import-Package: org.osgi.framework;version="1.3.0"
+Export-Package: com.github.seed.core.scalamodel,
+ com.github.seed.core.scalamodel.elements,
+ com.github.seed.core.scalamodel.elements.impl,
+ lpg.runtime
+Require-Bundle: org.objectweb.asm;bundle-version="3.3.1",
+ org.eclipse.emf.ecore;bundle-version="2.7.0";visibility:=reexport
+Bundle-ActivationPolicy: lazy
