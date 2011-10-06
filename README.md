@@ -1,7 +1,7 @@
 # SEED(Scala Eclipse Effort for Development )
 
 ## News
-2011.10.06 Great Moment!:) The SEED reachs the first milestone, M0.
+2011.10.06 Great Moment:) The SEED reached the first milestone, M0.
 
 ## Overview
 
