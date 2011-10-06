@@ -42,7 +42,7 @@ I will be very glad to see your name here:
 
 + https://github.com/jinmingjian/seed/contributors
 
-Or you like to fork or clone it.
+Or you'd like to fork or clone it.
 
 ## Additional resources
 
