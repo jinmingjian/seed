@@ -28,11 +28,8 @@ It is assumed that you are on the Eclipse Platform, not other distros:
 The current sources are almost self-contained except the e4 DI dependencies. If you are using Eclipse 4.2 development release, then there is no problem. If you are using Eclipse 3.8-, then you need to at least add the following e4 DI bundles by hands:
 
 javax.inject;
-
 javax.annotation;
-
 org.eclipse.e4.core.di; 
-
 org.eclipse.e4.core.contexts;
 
 From SEED M1, a update site will be setup for eliminating this problem.   
