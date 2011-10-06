@@ -54,7 +54,10 @@ All new artifacts(including the source codes) in the SEED are released under the
 + http://www.eclipse.org/legal/epl-v10.html
 
 Other third party dependencies will be kept in its own original license. They are:
+
 + Eclipse and its sub-projects, http://www.eclipse.org/
+
 + LPG, http://sourceforge.net/projects/lpg/
+
 + parboiled, https://github.com/sirthias/parboiled
 
