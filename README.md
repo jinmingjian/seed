@@ -15,6 +15,44 @@ I have written one blog entry, which gives an introduction into the SEED M0:
 
 ## Road Map
 
+recent milestone concerns:
+
+### M1 theme: bootstrapping
+
+type system(index system)
+
+nsc integration(I am planning to do a tweek for NSC to make the integration more more natively)
+
+build system(fsc?/sbt?)
+
+### M2 theme: self-hosted
+
+binary class viewer
+
+preference to switch your own scala system library 
+
+classpath container support
+
+SEED codes wiill switch to Scala(eat my own dog food)
+
+### M3-R1.0: 
+
+performance
+
+preferences
+
+customized CNF-based "Scala Package" view
+
+basic mixed Java/Scala integration
+
+basic refactoring support(rename)
+
+my implicit highlighting work
+
+...
+
+any contributions
+
 ## Contribute
 
 For the clear architecture, it is easy and fun to contribute to SEED. The informal prerequisite is the basic knowledge of Java, Scala, Eclipse and/or OSGI. But you can contribute anything even if you are not a programmer.
