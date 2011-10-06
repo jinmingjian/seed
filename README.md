@@ -1,4 +1,4 @@
-# SEED
+# SEED(Scala Eclipse Effort for Development )
 
 ## News
 2011.10.06 Great Moment!:) The SEED reachs the first milestone, M0.
@@ -25,18 +25,16 @@ I will be very glad to see your name here:
 
 + https://github.com/jinmingjian/seed/contributors
 
-Or you like to fork it here
-
-+ https://github.com/jinmingjian/seed/fork
-
-Or clone it here:
-
-+ git@github.com:jinmingjian/seed.git
+Or you like to fork or clone it.
 
 ## Additional resources
 
 for time limitation, it needs a little time to setup a group or other communication channel for sharing ideas. If you have some ideas before these channels setup, you can tell me via jin.phd@gmail.com. 
 
 ## License
-The new sources are released under the EPL(Eclipse Public License)v1. Other third party dependencies will kept in its own original license. 
+All new artifacts(including the source codes) in the SEED are released under the EPL(Eclipse Public License) v1. 
+
++ http://www.eclipse.org/legal/epl-v10.html
+
+Other third party dependencies will be kept in its own original license. 
 
