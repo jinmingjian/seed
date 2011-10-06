@@ -21,6 +21,23 @@ For the clear architecture, it is easy and fun to contribute to SEED. The inform
 
 Let's say about the feature of "Mark Occurrences", it could be implemented by adding a new token based occurrences detection service (like IFetchOccurrencesService) by consuming the LexingService as the backend. As for the frontend(UI), you can mock my token highlighting logic firstly. Or it is better to abstract one token based rendering service for all kinds of things in the future. It may cost hours or days which depends on what you want to do and how much you are familiar with the Eclipse platform. 
 
+It is assumed that you are on the Eclipse Platform, not other distros:
+
++ http://download.eclipse.org/eclipse/downloads/
+
+The current sources are almost self-contained except the e4 DI dependencies. If you are using Eclipse 4.2 development release, then there is no problem. If you are using Eclipse 3.8-, then you need to at least add the following e4 DI bundles by hands:
+
+javax.inject
+javax.annotation
+org.eclipse.e4.core.di 
+org.eclipse.e4.core.contexts
+
+From SEED M1, a update site will be setup for eliminating this problem.   
+
+To reference my blog entry for more informations.
+
++ http://jmj-eclipse.blogspot.com/
+
 I will be very glad to see your name here:
 
 + https://github.com/jinmingjian/seed/contributors
