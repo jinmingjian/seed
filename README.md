@@ -5,7 +5,13 @@
 
 ## Overview
 
-The basic motivation is to drive the design and implementation of SEED to match the requirements of the professional Scala Developers.
+The basic motivation of SEED is to design and implement one Eclipse based IDE environment to match the requirements of the professional Scala Developers.
+
+## Status
+
+The status of project is in its first initial stage. Some of fundamental works have not finished. For instance, the some language constructs (like, Trait) have not completed. This are basically some of manual labors. Now it is just suitable for potential Eclipse pluign contributors to play with it, 
+
+I will setup a update site(binary plugin) for common users comsuming after hitting M1, which is planned to release at the end of this year. I hope M1 is solid for basic Scala coding, and provides 80% of Scala-IDE functionilities and 20-30% functionalities which Scala-IDE can not provide.
 
 ## Get started
 
