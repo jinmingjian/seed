@@ -9,9 +9,9 @@ The basic motivation of SEED is to design and implement one Eclipse based IDE en
 
 ## Status
 
-The status of project is in its first initial stage. Some of fundamental works have not finished. For instance, the some language constructs (like, Trait) have not completed. This are basically some of manual labors. Now it is just suitable for potential Eclipse pluign contributors to play with it, 
+The status of project is in its first initial stage. Some of fundamental works have not finished. For instance, the some language constructs (like, TraitDef) have not completed. The performance is very nice, but there is much space to increase the performance times. This are basically some of manual labors. Now it is just suitable for potential Eclipse pluign contributors to play with it, 
 
-I will setup a update site(binary plugin) for common users comsuming after hitting M1, which is planned to release at the end of this year. I hope M1 is solid for basic Scala coding, and provides 80% of Scala-IDE functionilities and 20-30% functionalities which Scala-IDE can not provide.
+I will setup a update site(binary plugins) for common users comsuming after hitting M1, which is planned to release at the end of this year. I hope M1 will be solid for the basic Scala coding.
 
 ## Get started
 
