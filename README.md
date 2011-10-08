@@ -76,6 +76,10 @@ javax.annotation;
 org.eclipse.e4.core.di; 
 org.eclipse.e4.core.contexts;
 
+And, you need install EMF rumtime binary at least if you work with Eclipse 3.x:
+
++ http://www.eclipse.org/modeling/emf/downloads/?project=emf
+
 From SEED M1, a update site will be setup for eliminating this problem.   
 
 To reference my blog entry for more informations.
