@@ -63,8 +63,6 @@ any contributions
 
 For the clear architecture, it is easy and fun to contribute to SEED. The informal prerequisite is the basic knowledge of Java, Scala, Eclipse and/or OSGI. But you can contribute anything even if you are not a programmer.
 
-Let's say about the feature of "Mark Occurrences", it could be implemented by adding a new token based occurrences detection service (like IFetchOccurrencesService) by consuming the LexingService as the backend. As for the frontend(UI), you can mock my token highlighting logic firstly. Or it is better to abstract one token based rendering service for all kinds of things in the future. It may cost hours or days which depends on what you want to do and how much you are familiar with the Eclipse platform. 
-
 It is assumed that you are on the Eclipse Platform, not other distros:
 
 + http://download.eclipse.org/eclipse/downloads/
