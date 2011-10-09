@@ -1,3 +1,4 @@
-# ingore .l
+# ingore some artifacts
 *.l
 bin/
+test_artifacts/
