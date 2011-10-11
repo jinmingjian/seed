@@ -42,6 +42,7 @@ classpath container support
 SEED codes wiill switch to Scala(eat my own dog food)
 
 ### M3-R1.0: 
+Debug Support
 
 performance
 
