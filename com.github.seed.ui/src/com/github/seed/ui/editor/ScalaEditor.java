@@ -23,6 +23,7 @@ import org.eclipse.ui.editors.text.TextEditor;
 import org.eclipse.ui.views.contentoutline.IContentOutlinePage;
 
 import com.github.seed.ui.Activator;
+import com.github.seed.ui.services.ScalaEditorServices;
 
 public class ScalaEditor extends TextEditor {
 

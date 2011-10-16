@@ -27,6 +27,7 @@ import org.eclipse.swt.SWT;
 import org.eclipse.swt.custom.StyleRange;
 
 import com.github.seed.core.services.ILexingService;
+import com.github.seed.ui.services.ScalaEditorServices;
 
 public class ScalaDamagerRepairer implements IPresentationDamager,
 		IPresentationRepairer {
@@ -124,7 +125,8 @@ public class ScalaDamagerRepairer implements IPresentationDamager,
 			ITypedRegion region) {
 		int prevOffset = -1;
 		int prevEnd = -1;
-		List tokens = lexingService.getTokens(key, region.getOffset(), region.getLength());
+		List tokens = lexingService.getTokens(fDocument.get().toCharArray(), 
+				region.getOffset(), region.getLength());
 		if (tokens == null) {
 			return;
 		}

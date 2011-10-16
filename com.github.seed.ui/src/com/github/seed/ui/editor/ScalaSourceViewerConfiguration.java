@@ -17,6 +17,8 @@ import org.eclipse.jface.text.presentation.PresentationReconciler;
 import org.eclipse.jface.text.source.ISourceViewer;
 import org.eclipse.ui.editors.text.TextSourceViewerConfiguration;
 
+import com.github.seed.ui.services.ScalaEditorServices;
+
 /**
  * 
  *

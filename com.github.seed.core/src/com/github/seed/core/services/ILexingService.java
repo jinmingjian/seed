@@ -24,8 +24,7 @@ public interface ILexingService {
 	int TK_EOF_TOKEN = EOF_TOKEN;
 	int TK_COLON = COLON;
 	
-	String getKey();
-	List getTokens(final String filePath, final int regionOffset, final int regionLength);
+	List getTokens(final char[] contents, final int regionOffset, final int regionLength);
 	int getStartOffset(Object token);
     int getEndOffset(Object token);
     int getKind(Object token);

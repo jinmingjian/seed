@@ -19,7 +19,12 @@ public class LexingServiceCreationFunction extends ContextFunction {
 
 	@Override
 	public Object compute(IEclipseContext context) {
-		return ContextInjectionFactory.make(LexingService.class, context);
+		LexingService lexingService = context.get(LexingService.class);
+		if ( lexingService == null) {
+			lexingService = ContextInjectionFactory.make(LexingService.class, context);
+			context.set(LexingService.class, lexingService);
+		}
+		return lexingService;
 	}
 
 }

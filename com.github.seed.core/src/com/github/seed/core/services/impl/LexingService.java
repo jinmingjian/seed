@@ -23,37 +23,26 @@ import com.github.seed.core.scalamodel.ScalaModelLexerexp;
 import com.github.seed.core.services.ILexingService;
 
 public class LexingService implements ILexingService {
-	//XXX: now the key is just the filePath of one scu
-	private String key;
+	private final static int ECLIPSE_TAB_VALUE = 4;
     private boolean[] fIsKeyword;
-    private ScalaModelLexer fLexer;
-    private IPrsStream fParseStream;
-
-    
-    public String getKey() {
-    	return this.key;
-    }
     
     /*
      * NOTE: re-new lexer/parseStream for some unwanted state cache in LPG
      */
-	private void lexing(String key, int startOffset, int endOffset) {
-		try {
-			this.fLexer = new ScalaModelLexer(key);
-			this.fParseStream = new PrsStream();
-			this.fLexer.lexer(this.fParseStream,startOffset,endOffset);
-			cacheKeywordsOnce();
-//			this.fParseStream.dumpTokens();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+	private void lexing(char[] contents, int startOffset, int endOffset) {
+		
 	}
 
     @Override
-    public List getTokens(String key, final int regionOffset, final int regionLength) {
-    	lexing(key, regionOffset, regionOffset + regionLength - 1);
-        return fParseStream.getTokens(); 
+    public List getTokens(final char[] contents, final int regionOffset, final int regionLength) {
+    	ScalaModelLexer lexer = new ScalaModelLexer();
+		lexer.reset(contents, null, ECLIPSE_TAB_VALUE);
+		IPrsStream parseStream = new PrsStream();
+		lexer.getILexStream().setPrsStream(parseStream);
+		lexer.lexer(parseStream, regionOffset, regionOffset+regionLength-1);
+		cacheKeywordsOnce(lexer,parseStream);
+//		this.fParseStream.dumpTokens();
+        return parseStream.getTokens(); 
     }
 
     @Override
@@ -63,15 +52,15 @@ public class LexingService implements ILexingService {
         return kind >= 0 && kind < fIsKeyword.length && fIsKeyword[kind];
     }
 
-    protected void cacheKeywordsOnce() {
+    protected void cacheKeywordsOnce(ScalaModelLexer lexer, IPrsStream parseStream) {
         if (fIsKeyword == null) {
             String tokenKindNames[] = ScalaModelLexerexp.orderedTerminalSymbols;
 
             fIsKeyword= new boolean[tokenKindNames.length];
 
-            int[] keywordKinds= this.fLexer.getKeywordKinds();
+            int[] keywordKinds= lexer.getKeywordKinds();
             for(int i= 1; i < keywordKinds.length; i++) {
-                int index= this.fParseStream.mapKind(keywordKinds[i]);
+                int index= parseStream.mapKind(keywordKinds[i]);
                 fIsKeyword[index]= true;
             }
         }
