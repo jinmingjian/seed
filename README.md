@@ -1,7 +1,7 @@
 # SEED(Scala Eclipse Effort for Development )
 
 ## Notice
-** This project has been abandoned for kinds of reasons, although I hope that it could light the related projects in some time and in some extent. ** 
+**This project has been abandoned for kinds of reasons, although I hope that it could light the related projects in some time or in some extent.** 
 
 ## News
 2011.10.06 Great Moment:) The SEED reached the first milestone, M0.
